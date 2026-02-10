@@ -9,7 +9,9 @@
 1. **각 `bracket`을 FFA의 `group`(2인 조)으로 취급**한다.  
 2. `participant_id`가 **동일하게 유지**되거나 **명확한 매핑**이 존재한다.  
 3. `bracket_sets.winlose`는 `ffa_match_scores.score`로 **1/0 변환**한다.  
-4. FFA에 **일부 컬럼이 누락**되어 정보 손실을 감수하거나 스키마를 보강한다.
+4. `winner_entrant_id`가 **실제 `participant_id`와 동일**하다고 가정한다.  
+   - 동일하지 않다면 `participants`를 통해 별도 매핑 필요  
+5. FFA에 **일부 컬럼이 누락**되어 정보 손실을 감수하거나 스키마를 보강한다.
 
 ---
 

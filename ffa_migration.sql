@@ -72,6 +72,7 @@ INNER JOIN `ffa_groups` tFfaGroups
 	AND tFfaGroups.`group_order` = tBrackets.`order`;
 
 -- 4) ffa_group_results 생성: bracket_entries -> ffa_group_results
+-- 주의: winner_entrant_id가 participant_id와 동일하다는 가정
 INSERT INTO `ffa_group_results` (
 	`group_id`,
 	`participant_id`,
